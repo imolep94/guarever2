@@ -1210,7 +1210,7 @@ class main:
       #Borrar aquellos que ids que no son utiles. 
         def chat_on():
             nonlocal ids
-            dialogs = [i.chat.id for i in app.iter_dialogs()]
+            dialogs = [i.chat.id for i in app.get_dialogs()]
             faltan = False
             for k, v in ids.items():
                 if  v not in dialogs:
