@@ -1,0 +1,42 @@
+{
+  "name": "Pyguard",
+  "description": "Bot para ayuda del juego CW",
+  "keywords": [
+    "telegram",
+    "pyrogram",
+    "userbot",
+    "game",
+    "CW",
+    "prueba"
+  ],
+  "repository": "https://github.com/imolep94/CWBot2/",
+  "success_url": "https://telegram.me/Inesita94",
+  "website": "https://github.com/imolep94/CWBot2",
+  "env": {
+    "APP_ID": {
+      "description": "Obtenlo de https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Obtenlo de https://my.telegram.org",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "Generalo con python Firsttry.py localmente (en More> Run Console)",
+      "value": ""
+    },
+    "CW_IDS": {
+      "description": "Diccionario con de IDs de grupos, dejalo por defecto",
+      "value": "[{}]"
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
